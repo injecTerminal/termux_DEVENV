@@ -5,11 +5,11 @@
 
 flowchart LR
 
-	O()-- main.c -->A( Pre-processor );
-	A -- main.i --> B( Compiler );
-	B -- main.s --> C( Assembler );
-	C -- main.o --> D( Linker );
-	D -- prog --> o();
+	O-- main.c -->A("Pre-processor (cpp)");
+	A -- main.i --> B(" Compiler (cc1)");
+	B -- main.s --> C(" Assembler (as)");
+	C -- main.o --> D(" Linker (ld)");
+	D -- prog --> P;
 
 ```
 
