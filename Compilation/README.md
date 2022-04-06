@@ -2,7 +2,8 @@
 
 ## C Compilation Flow Chart
 ```mermaid
-flowchat LT
+flowchat
+start=>start: clang file
 cpp=>operation: Pre-
 processor
 (cpp)
@@ -12,10 +13,11 @@ as=>operation: Assembler
 (as)
 ld=>operation: Linker
 (ld)
+end=>end: exec file
 
 
 
-cpp->cc1->as->ld
+start(main.c)->cpp(main.i)->cc1(main.s)->as(main.o)->ld(prog)->end
 
 ```
 ## Preprocessing Command  
