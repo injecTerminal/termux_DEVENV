@@ -5,9 +5,9 @@
 
 flowchart LR
 
-	A[ Pre-processor (cpp) ] -- main.i --> B[ Compiler (cc1) ];
-	B -- main.s --> C[ Assembler (as) ];
-	C -- main.o --> D[ Linker (ld) ];
+	A[ Pre-processor ] -- main.i --> B[ Compiler ];
+	B -- main.s --> C[ Assembler ];
+	C -- main.o --> D[ Linker ];
 
 ```
 
