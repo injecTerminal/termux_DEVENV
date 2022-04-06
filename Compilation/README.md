@@ -1,5 +1,15 @@
-# Compile Process
+# Clang Compile Process
 
+## C Compilation Flow Chart
+```flowchart
+cpp=>operation: Preprocesser
+cc1=>operation: Complier
+as=>operation: Assembler
+ld=>operation: Linker
+
+cpp->cc1->as->ld
+
+```
 ## Preprocessing Command  
 
 `gcc -E -o main.i main.c`
