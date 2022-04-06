@@ -1,11 +1,19 @@
 # Clang Compile Process
 
 ## C Compilation Flow Chart
-```flowchart
-cpp=>operation: Preprocesser
-cc1=>operation: Complier
+```mermaid
+flowchat LT
+cpp=>operation: Pre-
+processor
+(cpp)
+cc1=>operation: Compiler
+(cc1)
 as=>operation: Assembler
+(as)
 ld=>operation: Linker
+(ld)
+
+
 
 cpp->cc1->as->ld
 
