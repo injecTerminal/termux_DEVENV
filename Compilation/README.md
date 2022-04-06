@@ -5,7 +5,8 @@
 
 flowchart LR
 
-	A[ Pre-processor ] -- main.i --> B[ Compiler ];
+	-- main.c -->A[ Pre-processor ];
+	A -- main.i --> B[ Compiler ];
 	B -- main.s --> C[ Assembler ];
 	C -- main.o --> D[ Linker ];
 
