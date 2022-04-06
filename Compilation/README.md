@@ -3,29 +3,14 @@
 ## C Compilation Flow Chart
 ```mermaid
 
-flowchart TD
+flowchart LR
 
-	A[you are like] --> B[ I like me ];
+	A[ Pre-processor (cpp) ] -- main.i --> B[ Compiler (cc1) ];
+	B -- main.s --> C[ Assembler (as) ];
+	C -- main.o --> D[ Linker (ld) ];
 
 ```
 
-```
-start=>start: clang file
-cpp=>operation: Pre-
-processor
-(cpp)
-cc1=>operation: Compiler
-(cc1)
-as=>operation: Assembler
-(as)
-ld=>operation: Linker
-(ld)
-end=>end: exec file
-
-
-
-start(main.c)->cpp(main.i)->cc1(main.s)->as(main.o)->ld(prog)->end
-```
 ## Preprocessing Command  
 
 `gcc -E -o main.i main.c`
