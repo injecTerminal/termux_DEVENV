@@ -1,8 +1,8 @@
 # Clang Compile Process
 
 ## C Compilation Flow Chart
-```mermaid
-flowchat
+```flow
+
 start=>start: clang file
 cpp=>operation: Pre-
 processor
