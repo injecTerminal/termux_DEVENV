@@ -1,8 +1,15 @@
 # Clang Compile Process
 
 ## C Compilation Flow Chart
-```flow
+```mermaid
 
+flowchart TD
+
+	A[you are like] --> B[ I like me ];
+
+```
+
+```
 start=>start: clang file
 cpp=>operation: Pre-
 processor
@@ -18,7 +25,6 @@ end=>end: exec file
 
 
 start(main.c)->cpp(main.i)->cc1(main.s)->as(main.o)->ld(prog)->end
-
 ```
 ## Preprocessing Command  
 
