@@ -68,3 +68,8 @@ create shared library
 linux> gcc -shared -fpic -o addvec.so addvec.c multvec.c # fpic weizhiwuguang
 ```
 
+show executable file dynamic library
+
+- ldd exec-file
+* objdump exec-file
+
