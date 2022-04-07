@@ -5,11 +5,11 @@
 
 flowchart TB
 
-	O( ) -- main.c -->A("Pre-processor (cpp)");
+	O([ ]) -- main.c -->A("Pre-processor (cpp)");
 	A -- main.i --> B(" Compiler (cc1)");
 	B -- main.s --> C(" Assembler (as)");
 	C -- main.o --> D(" Linker (ld)");
-	D -- prog --> P( );
+	D -- prog --> P([ ]);
 
 ```
 
@@ -58,13 +58,13 @@ linux> ar rcs libfunc.a func.o+
 extract static library
 
 ```bash
-	linux> ar x libvector.a --output ..
+linux> ar x libvector.a --output ..
 ```
 
 ## shared libraries
 
 create shared library
 ```bash
-	linux> gcc -shared -fpic -o addvec.so addvec.c multvec.c # fpic weizhiwuguang
+linux> gcc -shared -fpic -o addvec.so addvec.c multvec.c # fpic weizhiwuguang
 ```
 
