@@ -46,20 +46,22 @@ flowchart TB
 ## static libraries
 
 create static library
-1.  ```console
-	ar rcs libvector.a addvec.o multvec.o```
+-.  ```shell
+	linux> ar rcs libvector.a addvec.o multvec.o
+```
 
 extract static library
 
-2.  ```bash
-	ar x libvector.a --output ..
++.  ```bash
+	linux> ar x libvector.a --output ..
 ```
 
 ## shared libraries
 
 create shared library
-1. ```bash
-	gcc -shared -fpic -o addvec.so addvec.c multvec.c // fpic weizhiwuguang```
+-. ```bash
+	linux> gcc -shared -fpic -o addvec.so addvec.c multvec.c // fpic weizhiwuguang
+```
 
 
 
