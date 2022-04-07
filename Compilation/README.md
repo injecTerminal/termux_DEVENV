@@ -41,13 +41,18 @@ flowchart TB
 
 ## ld linker
 
-`gcc -v main.o`
+`gcc -v main.{c,i,s,o} lib.{o,a,so}+`
+
+`gcc -o prog main.{c,i,s,o} lib.{o,a,so}+ `
 
 ## static libraries
 
 create static library
 ```shell
-	linux> ar rcs libvector.a addvec.o multvec.o
+# example
+linux> ar rcs libvector.a addvec.o multvec.o
+# method
+linux> ar rcs libfunc.a func.o+
 ```
 
 extract static library
@@ -60,6 +65,6 @@ extract static library
 
 create shared library
 ```bash
-	linux> gcc -shared -fpic -o addvec.so addvec.c multvec.c // fpic weizhiwuguang
+	linux> gcc -shared -fpic -o addvec.so addvec.c multvec.c # fpic weizhiwuguang
 ```
 
