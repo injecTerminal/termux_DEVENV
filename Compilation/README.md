@@ -16,13 +16,14 @@ flowchart TB
 ## Preprocessing Command  
 
 `cpp -o main.i main.c`
+
 `gcc -E -o main.i main.c`
 
 ## Compiling Command
 
 `cc -s -o main.s main.i`
+
 `gcc -s -o main.s main.i`
-`
 
 ## Assembling
 
@@ -32,22 +33,27 @@ flowchart TB
 
 `ld -static -o prog main.o `
 
-##cpp C Pre-processer
+## cpp C Pre-processer
 
-##cc C Compiler
+## cc C Compiler
 
-##as Assembler
+## as Assembler
 
-##ld linker
+## ld linker
 
 `gcc -v main.o`
 
 ## static libraries
 
 create static library
-1.  `ar rcs libvector.a addvec.o multvec.o`
+1.  ```console
+	ar rcs libvector.a addvec.o multvec.o
+```
+
 extract static library
-2.  `ar x libvector.a --output ..`
+2.  ```console
+	ar x libvector.a --output ..
+```
 
 ## shared libraries
 
