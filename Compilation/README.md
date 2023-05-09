@@ -25,7 +25,7 @@ flowchart TB
 
 `gcc -S -o main.s main.i`
 
-`gcc -c -o main.s main.i`
+`gcc -c -o main.o main.{c,i}`
 ## Assembling
 
 `as -o main.o main.s`
