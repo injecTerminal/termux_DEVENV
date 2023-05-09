@@ -21,10 +21,11 @@ flowchart TB
 
 ## Compiling Command
 
-`cc -s -o main.s main.i`
+`cc -S -o main.s main.i`
 
-`gcc -s -o main.s main.i`
+`gcc -S -o main.s main.i`
 
+`gcc -c -o main.s main.i`
 ## Assembling
 
 `as -o main.o main.s`
